@@ -1,4 +1,4 @@
-package com.epicodus.myrestaurants;
+package com.epicodus.myrestaurants.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +13,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.epicodus.myrestaurants.R;
+import com.epicodus.myrestaurants.Restaurant;
+import com.epicodus.myrestaurants.YelpService;
 import com.epicodus.myrestaurants.adapters.RestaurantListAdapter;
 
 import java.io.IOException;
@@ -31,7 +34,7 @@ public class RestaurantsActivity extends AppCompatActivity {
     @Bind(R.id.recyclerView) RecyclerView mRecyclerView;
     private RestaurantListAdapter mAdapter;
 
-    public ArrayList<com.epicodus.myrestaurants.Restaurant> mRestaurants = new ArrayList<>();
+    public ArrayList<Restaurant> mRestaurants = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +49,7 @@ public class RestaurantsActivity extends AppCompatActivity {
     }
 
     private void getRestaurants(String location) {
-        final com.epicodus.myrestaurants.YelpService yelpService = new com.epicodus.myrestaurants.YelpService();
+        final YelpService yelpService = new YelpService();
 
         yelpService.findRestaurants(location, new Callback() {
 
