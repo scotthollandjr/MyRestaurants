@@ -1,10 +1,13 @@
 package com.epicodus.myrestaurants;
 
+import org.parceler.Parcel;
+
 import java.util.ArrayList;
 
 /**
  * Created by Guest on 7/5/16.
  */
+@Parcel
 public class Restaurant {
     private String mName;
     private String mPhone;
