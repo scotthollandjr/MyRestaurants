@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.epicodus.myrestaurants.R;
 import com.epicodus.myrestaurants.Restaurant;
 import com.epicodus.myrestaurants.adapters.RestaurantPagerAdapter;
 import com.squareup.picasso.Picasso;
