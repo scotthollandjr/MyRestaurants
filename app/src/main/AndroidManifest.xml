@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:theme="@style/NoActionBarTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,9 +22,9 @@
         <activity android:name=".ui.RestaurantListActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.epicodus.myrestaurants.MainActivity"></meta-data>
+                android:value="com.epicodus.myrestaurants.ui.MainActivity"></meta-data>
         </activity>
-        <activity android:name=".ui.RestaurantDetailActivity"></activity>
+        <acti95123vity android:name=".ui.RestaurantDetailActivity"></acti95123vity>
     </application>
 
 </manifest>
